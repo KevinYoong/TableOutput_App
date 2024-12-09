@@ -1,0 +1,35 @@
+/* Style for the body element */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  /* Style for all tables */
+  table {
+    width: 50%; /* Default width for tables */
+    margin-bottom: 20px; /* Space below each table */
+    border-collapse: collapse; /* Remove space between table cells */
+  }
+  
+  /* Style for table headers and cells */
+  th, td {
+    padding: 10px; /* Padding inside table cells */
+    text-align: center; /* Center-align text in table cells */
+  }
+  
+  /* Specific style for table1 */
+  #table1 {
+    width: 20%; /* Set a narrower width for table1 */
+  }
+  
+  /* Style for table titles */
+  .table-title {
+    font-weight: bold; /* Make the title text bold */
+    text-decoration: underline; /* Underline the title text */
+    margin-bottom: 10px; /* Space below the title */
+  }
+  
+  /* Specific style for the title of table2 */
+  #table2-title {
+    margin-top: 100px; /* Add more space above the title of table2 */
+  }
