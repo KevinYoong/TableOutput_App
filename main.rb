@@ -5,6 +5,7 @@ require 'json'
 # Enable CORS
 configure do
   enable :cross_origin
+  set :public_folder, 'public'
 end
 
 # Set CORS headers before each request
@@ -16,6 +17,8 @@ end
 
 # Handle preflight requests (optional but good practice)
 options '*' do
+  response.headers['Access-Control-Allow-Methods'] = 'GET, POST, OPTIONS'
+  response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
   200
 end
 
@@ -29,6 +32,8 @@ TABLE1 = {
 
 # Endpoint to serve table data
 get '/table-data' do
+  content_type :json
+  
   # Compute Table 2 values
   alpha = "A5 + A20 = #{TABLE1["A5"] + TABLE1["A20"]}"
   beta = "A15 / A7 = #{TABLE1["A15"] / TABLE1["A7"]}"
