@@ -43,5 +43,5 @@ end
 
 # Serve the static files
 get '/' do
-  send_file File.join(settings.public_folder, 'index.html')
+  send_file File.join(settings.root, 'index.html')
 end
