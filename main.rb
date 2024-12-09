@@ -33,7 +33,7 @@ TABLE1 = {
 # Endpoint to serve table data
 get '/table-data' do
   content_type :json
-  
+
   # Compute Table 2 values
   alpha = "A5 + A20 = #{TABLE1["A5"] + TABLE1["A20"]}"
   beta = "A15 / A7 = #{TABLE1["A15"] / TABLE1["A7"]}"
