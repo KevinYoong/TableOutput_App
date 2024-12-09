@@ -10,3 +10,5 @@ gem 'json'
 gem 'puma'
 
 # gem "rails"
+
+gem "rackup", "~> 2.2"
