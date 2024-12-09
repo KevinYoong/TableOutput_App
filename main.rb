@@ -40,3 +40,8 @@ get '/table-data' do
     table2: { alpha: alpha, beta: beta, charlie: charlie }
   }.to_json
 end
+
+# Serve the static files
+get '/' do
+  send_file File.join(settings.public_folder, 'index.html')
+end
