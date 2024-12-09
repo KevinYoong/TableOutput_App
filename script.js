@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const apiUrl = "http://localhost:4567/table-data"; // Backend API endpoint
+  const apiUrl = "/table-data"; // Relative URL for Heroku
 
   // Fetch data from the backend API
   fetch(apiUrl)
